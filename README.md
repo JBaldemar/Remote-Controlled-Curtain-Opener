@@ -6,4 +6,7 @@ work the way I want it. At this point I have bought most of the parts and starte
 Since the function of the device is not very complicated, I went ahead and bought all the parts that I think I'll need, this includes a breadboard, IR receivers and transmitters, 
 an arduino nano microcontroller, and the motors, cables, and a few smaller controllers (OP Amps, inverters, MOSFETS, etc).
 
-## Testing the IR receiver, exploring the Arduino nano library:
+## Setting up Computer:
+Since I am not doing this project on a windows or macOS device, it is easier for me to use the platformIO extension for the coding and testing.
+
+
