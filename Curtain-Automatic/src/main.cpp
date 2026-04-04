@@ -1,18 +1,21 @@
 #include <Arduino.h>
 
+#include <IRremote.hpp>
+#define IR_RECEIVE_PIN 2
+void setup()
+{
 
-#define IR_SENSOR A1
-
-// put function declarations here:
-int myFunction(int, int);
-
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600); // // Establish serial communication
+  
+  IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK); // Start the receiver
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  if (IrReceiver.decode()) {
+      Serial.println(IrReceiver.decodedIRData.decodedRawData, HEX);
+      IrReceiver.resume();
+  }
+  
 }
 
 // put function definitions here:
