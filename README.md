@@ -14,7 +14,7 @@ Since I am not doing this project on a windows or macOS device, it is easier for
 
 ## First Milestone:
 - IR sensor was connected to the correct pinouts in the arduino, I chose digital pin 2 for communication with the sensor. The circuit looks like the image provided below.
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 The code written is extremely simple, all it does is print on the serial monitor all the inputs it receives. Here is some of the printing by me using my home remote to send out signals towards the sensor.
 ![alt text](image.png)
