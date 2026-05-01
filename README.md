@@ -19,4 +19,9 @@ Since I am not doing this project on a windows or macOS device, it is easier for
 The code written is extremely simple, all it does is print on the serial monitor all the inputs it receives. Here is some of the printing by me using my home remote to send out signals towards the sensor.
 ![alt text](image.png)
 
+Updating methods!
+Buying each component individually was getting expensive and the cables were getting messy, so I wanna take the opportunity to get hands on KiCad and learn some PCB design so I can get a working prototype:
+<img width="1395" height="952" alt="image" src="https://github.com/user-attachments/assets/9e11a701-f9d5-4dd2-a9ce-bfc3303a6b38" />
+
+
 
