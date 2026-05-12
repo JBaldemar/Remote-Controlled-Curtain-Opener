@@ -1,8 +1,7 @@
 #include <Arduino.h>
 
-#define HBRIDGE_B2 3
-#define HBRIDGE_B1 4
-#define END_TIMER 20000
+#define HBRIDGE_B2 A1
+#define HBRIDGE_B1 A2
 
 #define STOPPED 0
 #define SPINING_RIGHT 1
@@ -15,16 +14,16 @@ void setup(){
 
 }
 void spinLeft(){
-    digitalWrite(HBRIDGE_B1, HIGH);
-    digitalWrite(HBRIDGE_B2, LOW);
+    analogWrite(HBRIDGE_B1, 150);
+    analogWrite(HBRIDGE_B2, 0);
 }
 void stopMotor(){
-    digitalWrite(HBRIDGE_B1, 0);
-    digitalWrite(HBRIDGE_B2, 0);
+    analogWrite(HBRIDGE_B1, 0);
+    analogWrite(HBRIDGE_B2, 0);
 }
 void spinRight(){
-    digitalWrite(HBRIDGE_B1, LOW);
-    digitalWrite(HBRIDGE_B2, HIGH);
+    analogWrite(HBRIDGE_B1, 0);
+    analogWrite(HBRIDGE_B2, 150);
 }
 
 void spinBothDirectionsFSM(){
@@ -56,7 +55,7 @@ void spinBothDirectionsFSM(){
 }
 
 void loop(){
-    //spinBothDirectionsFSM();
+    spinBothDirectionsFSM();
 }
 
 
