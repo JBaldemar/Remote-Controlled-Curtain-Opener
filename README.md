@@ -30,4 +30,5 @@ Today I plugged in the motor into the system, to test it I used digital pins 3 a
 ![alt text](image-3.png)
 >>>>>>> ee3f9d9 (finishing up the coding)
 
+The coding and design works, it's functional and it is powered by battery and by plugging in the arduino through USB-C.
 
